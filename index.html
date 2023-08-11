@@ -25,7 +25,6 @@
         color: #ffffff;
       }
       h2 {
-        margin: -280px 0 100px;
         text-align: center;
         font-size: 55px;
         font-weight: 700;
@@ -59,6 +58,17 @@
         font-weight: 500;
         text-indent: 40px;
       }
+      .second-section-name {
+        margin: -280px 0 70px;
+      }
+      .equipment {
+        background: var(--primary-color);
+        padding: 0 10px 70px 30px;
+      }
+      .third-section-name {
+        color: #ffffff;
+        padding: 70px;
+      }
     </style>
   </head>
   <body>
@@ -86,9 +96,9 @@
         >
       </div>
       <div class="types-rules">
-        <h2>Speed Skating - Types and Rules:</h2>
+        <h2 class="second-section-name">Speed Skating - Types and Rules:</h2>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 mb-5">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/779/original/Header-Team-Short-Track_1.png?1691673572"
               alt="short track"
@@ -117,13 +127,21 @@
         </div>
         <div class="row mt-5">
           <div class="col-md-6">
+            <div class="col-md-6 d-block d-md-none mb-5">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/780/original/ap_97230631970-b141ac7adac7da8b070fa104c392a8aa6f6b7659_1.png?1691673594"
+                alt="long track"
+                class="img-fluid"
+              />
+            </div>
             <h3>Long track</h3>
+
             <p class="rules">
               Races are run counter-clockwise on a 400-meter oval. In all
               individual competition forms, only two skaters are allowed to race
               at once. Skaters must change lanes every lap.
             </p>
-            <p class="rules" >
+            <p class="rules">
               The skater changing from the outside lane to the inside has
               right-of-way. Skaters may be disqualified for false starts,
               impeding, and cutting inside the track. If a skater misses their
@@ -132,19 +150,19 @@
               time.
             </p>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 d-none d-md-block">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/780/original/ap_97230631970-b141ac7adac7da8b070fa104c392a8aa6f6b7659_1.png?1691673594"
-              alt="short track"
+              alt="long track"
               class="img-fluid"
             />
           </div>
         </div>
         <div class="row mt-5 mb-5">
-          <div class="col-md-6">
+          <div class="col-md-6 mb-5">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/781/original/photo_l_1.png?1691673622"
-              alt="short track"
+              alt="team pursuit"
               class="img-fluid"
             />
           </div>
@@ -156,8 +174,8 @@
               track cycling. Two teams race at a time, starting at a line in the
               middle of the straightaway. One team starts on each side of the
               track.
-              </p>
-              <p class="rules">
+            </p>
+            <p class="rules">
               There are several formats for the team pursuit. The Olympic format
               is unusual in that it is a cup format, with several rounds of
               exclusion between two teams. In the World Cup and World
@@ -166,7 +184,31 @@
             </p>
           </div>
         </div>
-        
+      </div>
+      <div class="equipment">
+        <h2 class="third-section-name">Speed Skating - Equipment:</h2>
+        <div class="row">
+          <div class="col-sm">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/986/original/Slice_2.png?1691782176"
+              alt="speed skates"
+            />
+          </div>
+          <div class="col-sm">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/987/original/Slice_3.png?1691782188"
+              alt="bodysuit"
+              class="rounded-top"
+            />
+          </div>
+          <div class="col-sm">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/988/original/Slice_1.png?1691782198"
+              alt="helmet"
+              class="rounded-top"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </body>
