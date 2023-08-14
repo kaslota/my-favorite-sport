@@ -25,7 +25,7 @@
         --primary-color: #2c5eae;
       }
       body {
-        font-family: sans-serif;
+        font-family: "Olympic Sans", Inter, Helvetica, Arial, sans-serif;
         overflow-x: hidden;
       }
 
@@ -65,7 +65,7 @@
         background: var(--primary-color);
         font-size: 34px;
         font-weight: 500;
-        max-width: 375px;
+        max-width: 373px;
         border: #2c5eae;
       }
       .rules {
@@ -76,12 +76,8 @@
       .equipment {
         background: var(--primary-color);
       }
-      .equipment-img {
+      .equipment-pad {
         padding-left: 40px;
-      }
-      .third-section-name {
-        color: #ffffff;
-        padding: 70px;
       }
       :hover.women-rec-link,
       :hover.soc-media-link {
@@ -97,11 +93,11 @@
         text-align: center;
         margin-bottom: 70px;
       }
-      .wiki-learn {
+      .wiki-link {
         color: #ffffff;
         font-weight: 600;
       }
-      :hover.wiki-learn {
+      :hover.wiki-link {
         color: #ffffff;
         text-decoration: none;
       }
@@ -115,7 +111,7 @@
       <div class="container">
         <a
           class="navbar-brand"
-          href="https://olympics.com/en/sports/speed-skating/"
+          href="https://www.isu.org/speed-skating/events/world-cup-speed-skating"
           target="_blank"
         >
           <img
@@ -192,14 +188,14 @@
       <div class="container">
         <h2 class="mt-5 mb-5">Speed Skating - Types and Rules:</h2>
         <div class="row">
-          <div class="col-md-6 mb-5">
+          <div class="col-sm-6 mb-5 mt-3">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/779/original/Header-Team-Short-Track_1.png?1691673572"
               alt="short track"
               class="img-fluid"
             />
           </div>
-          <div class="col-md-6">
+          <div class="col-sm-6">
             <h3>Short track</h3>
             <p class="rules">
               Races are run counter-clockwise on a 111-meter track. Short track
@@ -220,14 +216,14 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 d-block d-md-none mb-5">
+          <div class="col-sm-6 d-block d-md-none mb-5 mt-5">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/780/original/ap_97230631970-b141ac7adac7da8b070fa104c392a8aa6f6b7659_1.png?1691673594"
               alt="long track"
               class="img-fluid"
             />
           </div>
-          <div class="col-md-6">
+          <div class="col-sm-6">
             <h3>Long track</h3>
             <p class="rules">
               Races are run counter-clockwise on a 400-meter oval. In all
@@ -243,7 +239,7 @@
               time.
             </p>
           </div>
-          <div class="col-md-6 d-none d-md-block">
+          <div class="col-sm-6 d-none d-md-block">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/780/original/ap_97230631970-b141ac7adac7da8b070fa104c392a8aa6f6b7659_1.png?1691673594"
               alt="long track"
@@ -252,14 +248,14 @@
           </div>
         </div>
         <div class="row mt-5 mb-5">
-          <div class="col-md-6">
+          <div class="col-sm-6">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/781/original/photo_l_1.png?1691673622"
               alt="team pursuit"
               class="img-fluid"
             />
           </div>
-          <div class="col-md-6">
+          <div class="col-sm-6 ">
             <h3>Team pursuit</h3>
             <p class="rules">
               The team pursuit is a team event in speed skating and is skated by
@@ -280,29 +276,29 @@
       </div>
     </div>
     <div class="equipment" id="equipment">
-      <h2 class="third-section-name">Speed Skating - Equipment:</h2>
-      <div class="row ms-5 equipment-img">
-        <div class="col-sm">
+      <h2 class="text-white pt-5 pb-3 mb-5">Speed Skating - Equipment:</h2>
+      <div class="row ms-5 equipment-pad">
+        <div class="col-md">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/986/original/Slice_2.png?1691782176"
             alt="speed skates"
-            class="rounded-top mb-5"
+            class="rounded-top mb-5 img-fluid"
             title="Speed Skates - 'Maple'"
           />
         </div>
-        <div class="col-sm">
+        <div class="col-md">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/987/original/Slice_3.png?1691782188"
             alt="bodysuit"
-            class="rounded-top mb-5"
+            class="rounded-top mb-5 img-fluid"
             title="Bodysuit"
           />
         </div>
-        <div class="col-sm">
+        <div class="col-md">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/988/original/Slice_1.png?1691782198"
             alt="helmet"
-            class="rounded-top mb-5"
+            class="rounded-top mb-5 img-fluid"
             title="Helmet - 'Apogee'"
           />
         </div>
@@ -369,14 +365,14 @@
         If you want learn more about <em>Speed Skating</em>, you can read on
         <a
           href="https://en.wikipedia.org/wiki/Speed_skating"
-          class="wiki-learn"
+          class="wiki-link"
           target="_blank"
           >Wikipedia</a
         >
         or on
         <a
           href="https://olympics.com/en/sports/speed-skating/"
-          class="wiki-learn"
+          class="wiki-link"
           target="_blank"
           >Olympic</a
         >.
