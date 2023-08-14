@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale = 1.0,  maximum-scale = 1.0, user-scalable = no"
+    />
     <title>Speed Skating - My Favorite Sport</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,18 +42,18 @@
         font-family: "Passion One", cursive;
         font-family: "Poppins", sans-serif;
         font-size: 55px;
-        font-weight: bold;
+        font-weight: 900;
         color: #ffffff;
       }
       h2 {
-         font-family: "Passion One", cursive;
+        font-family: "Passion One", cursive;
         font-family: "Poppins", sans-serif;
         text-align: center;
         font-size: 55px;
         font-weight: 700;
       }
       h3 {
-         font-family: "Passion One", cursive;
+        font-family: "Passion One", cursive;
         font-family: "Poppins", sans-serif;
         text-align: center;
         color: var(--primary-color);
@@ -69,17 +72,16 @@
       }
       .description {
         font-size: 19px;
-        font-weight: 100;
         color: #ffffff;
         width: 440px;
       }
       .learn-more-btn {
-         font-family: "Passion One", cursive;
+        font-family: "Passion One", cursive;
         font-family: "Poppins", sans-serif;
         background: var(--primary-color);
         font-size: 34px;
         font-weight: 500;
-        max-width: 400px;
+        padding: 6px 105px;
         border: #2c5eae;
       }
       .rules {
@@ -91,7 +93,7 @@
         background: var(--primary-color);
       }
       .equipment-pad {
-        padding-left: 40px;
+        padding-left: 100px;
       }
       :hover.women-rec-link,
       :hover.soc-media-link {
@@ -115,11 +117,54 @@
         color: #ffffff;
         text-decoration: none;
       }
+      @media only screen and (max-device-width: 480px) {
+        h1 {
+          font-size: 27px;
+          font-weight: 900; 
+        }
+        h2 {
+          font-size: 39px;
+        }
+        h3 {
+          font-size: 35px;
+        }
+        .introduction-img {
+          background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/093/458/original/iPhone_14_-_1_%283%29.png?1692047596);
+        }
+        .introduction-text {
+          left: -102px;
+    top: 188px;
+        }
+        .description {
+          font-size: 19px;
+          width: 300px;
+          font-weight: 300;
+        }
+        .hide-mobile {
+          display: none;
+        }
+        .learn-more-btn {
+          font-size: 21px;
+          padding: 6px 41px;
+        }
+        .rules {
+          font-size: 20px;
+        }
+        .img-marg {
+          margin-bottom: 52px;
+        }
+        .equipment-pad {
+          padding-left: 33px;
+        }
+        .img-wight {
+          width: 91%;
+        }
+      }
     </style>
   </head>
   <body>
     <nav
-      class="navbar navbar-expand-lg navbar-light fixed-top"
+      class="navbar navbar-expand-md navbar-light fixed-top"
       style="background-color: #2c5eae"
     >
       <div class="container">
@@ -183,17 +228,19 @@
         </div>
       </div>
     </nav>
-    <div class="introduction-img" id="introduction">
+    <div class="introduction-img img-fluid" id="introduction">
       <div class="introduction-text">
         <h1 class="main-header">Speed Skating</h1>
         <p class="description">
           is an ice sport in which the players wearing skates race on oval ice
-          tracks. Speed skaters can attain a maximum speed of around 60km/h. The
-          idea of the sport was originated in Scandinavia and Netherlands where
-          the natives attached bones to their shoes and used it to travel on
-          frozen rivers, lakes and canals.
+          tracks. Speed skaters can attain a maximum speed of around
+          60km/h.<span class="hide-mobile">
+            The idea of the sport was originated in Scandinavia and Netherlands
+            where the natives attached bones to their shoes and used it to
+            travel on frozen rivers, lakes and canals.</span
+          >
         </p>
-        <a href="#contact" class="btn btn-primary shadow learn-more-btn col-4"
+        <a href="#contact" class="btn btn-primary shadow learn-more-btn"
           >Learn more</a
         >
       </div>
@@ -266,7 +313,7 @@
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/781/original/photo_l_1.png?1691673622"
               alt="team pursuit"
-              class="img-fluid"
+              class="img-fluid img-marg"
             />
           </div>
           <div class="col-sm-6">
@@ -289,30 +336,30 @@
         </div>
       </div>
     </div>
-    <div class="equipment" id="equipment">
-      <h2 class="text-white pt-5 pb-3 mb-5">Speed Skating - Equipment:</h2>
-      <div class="row ms-5 equipment-pad">
-        <div class="col-md">
+    <div class="equipment pb-5" id="equipment">
+      <h2 class="text-white pt-5 pb-5">Speed Skating - Equipment:</h2>
+      <div class="row equipment-pad">
+        <div class="col-md-4">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/986/original/Slice_2.png?1691782176"
             alt="speed skates"
-            class="rounded-top mb-5 img-fluid"
+            class="rounded-top pt-3 pb-3 img-wight"
             title="Speed Skates - 'Maple'"
           />
         </div>
-        <div class="col-md">
+        <div class="col-md-4">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/987/original/Slice_3.png?1691782188"
             alt="bodysuit"
-            class="rounded-top mb-5 img-fluid"
+            class="rounded-top pt-3 pb-3 img-wight rounded-top"
             title="Bodysuit"
           />
         </div>
-        <div class="col-md">
+        <div class="col-md-4">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/988/original/Slice_1.png?1691782198"
             alt="helmet"
-            class="rounded-top mb-5 img-fluid"
+            class="rounded-top pt-3 pb-3 img-wight rounded-top"
             title="Helmet - 'Apogee'"
           />
         </div>
